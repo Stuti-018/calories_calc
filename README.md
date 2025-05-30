@@ -1,5 +1,3 @@
-# calories_calc
-
 # Calories Calculator App
 
 A Python-based application that analyzes food images and provides detailed nutritional information using OpenAI's Assistant API with vision capabilities.
