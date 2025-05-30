@@ -1,0 +1,55 @@
+I have assistant id in config.json and openai key as well
+
+I want to develop an easy streamlit app on which user uploads an image which is converted into openai acceptable file_id and is sent to the openai assistant v2 version on a new thread, in return we get this kind of output - 
+{
+  "is_food_item": true,
+  "food_items_detected": ["white bread", "American cheese", "butter"],
+  "detailed_nutrition_value": [
+    {
+      "food_name": "white bread",
+      "quantity": "2 slices (about 56g)",
+      "calories": "140 kcal",
+      "carbohydrates": "28 g",
+      "sugars": "3 g",
+      "fiber": "1 g",
+      "protein": "4 g",
+      "fat": "2 g",
+      "sodium": "260 mg"
+    },
+    {
+      "food_name": "American cheese",
+      "quantity": "2 slices (about 40g)",
+      "calories": "120 kcal",
+      "carbohydrates": "4 g",
+      "sugars": "2 g",
+      "fiber": "0 g",
+      "protein": "6 g",
+      "fat": "9 g",
+      "sodium": "800 mg"
+    },
+    {
+      "food_name": "butter",
+      "quantity": "1 tablespoon (14g)",
+      "calories": "100 kcal",
+      "carbohydrates": "0 g",
+      "sugars": "0 g",
+      "fiber": "0 g",
+      "protein": "0 g",
+      "fat": "11 g",
+      "sodium": "90 mg"
+    }
+  ],
+  "total_nutrition_value": {
+    "calories": "360 kcal",
+    "carbohydrates": "32 g",
+    "sugars": "5 g",
+    "fiber": "1 g",
+    "protein": "10 g",
+    "fat": "22 g",
+    "sodium": "1150 mg"
+  }
+}
+
+Display this output in an interactive form and if user sees that food_items_detected is not accurate and wishes to modify it, then they can click on re-analyse button and send another call on the same thread which has the modifies  or corrected foods items of the image. 
+
+Exception cases can be - if a user uploads items other than food, then then in the output we get is_food_item as false and do not computte or display anything except a note that no food item detected.
