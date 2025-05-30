@@ -77,29 +77,29 @@ The application returns nutrition data in the following JSON structure:
 
 ```json
 {
-  "is_food_item": true,
-  "food_items_detected": ["white bread", "American cheese", "butter"],
+  "is_food_item": true/false,
+  "food_items_detected": ["item1", "item2", ...],
   "detailed_nutrition_value": [
     {
-      "food_name": "white bread",
-      "quantity": "2 slices (about 56g)",
-      "calories": "140 kcal",
-      "carbohydrates": "28 g",
-      "sugars": "3 g",
-      "fiber": "1 g",
-      "protein": "4 g",
-      "fat": "2 g",
-      "sodium": "260 mg"
+      "food_name": "item_name",
+      "quantity": "amount with units",
+      "calories": "number with units",
+      "carbohydrates": "number with units", 
+      "sugars": "number with units",
+      "fiber": "number with units",
+      "protein": "number with units",
+      "fat": "number with units",
+      "sodium": "number with units"
     }
   ],
   "total_nutrition_value": {
-    "calories": "430 kcal",
-    "carbohydrates": "33 g",
-    "sugars": "6 g",
-    "fiber": "1 g",
-    "protein": "16 g",
-    "fat": "28 g",
-    "sodium": "1220 mg"
+    "calories": "total number with units",
+    "carbohydrates": "total number with units",
+    "sugars": "total number with units", 
+    "fiber": "total number with units",
+    "protein": "total number with units",
+    "fat": "total number with units",
+    "sodium": "total number with units"
   }
 }
 ```
