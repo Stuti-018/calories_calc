@@ -78,7 +78,7 @@ The application returns nutrition data in the following JSON structure:
 ```json
 {
   "is_food_item": true,
-  "food_items_detected": ["white bread", "American cheese", "butter", "egg"],
+  "food_items_detected": ["white bread", "American cheese", "butter"],
   "detailed_nutrition_value": [
     {
       "food_name": "white bread",
